@@ -13,7 +13,8 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<!-- When page loads, begin straightStitch function -->
+<!-- When page loads, begin straightStitch function (still need to figure out how to adjust so responsive to screen size)-->
+
 <body onload="straightStitch()">
 
     <!-- Header / Logo / Navbar -->
@@ -21,11 +22,19 @@
         <div class="container">
             <img src="assets/images/spool-removebg.png" id="spool">
             <h2 id="cookie">Calah Hansen</h2>
-            <nav id="nav">
-                <!-- <a href="index.html">About</a> -->
+            <!-- <nav id="nav">
+                <a href="index.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
-            </nav>
+            </nav> -->
+            <div class="dropdown">
+                <img src="assets/images/buttons-removebg.png" class="dropdownBtn" id="buttons">
+                <div class="dropdown-content">
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
     </header>
 
