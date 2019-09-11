@@ -225,10 +225,11 @@ h3, h2 {
 
 /* portfolio page *Initially used floats - now trying to use 2D grid layout and make it responsive*/
 
-.main-section-portfolio {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+/* .main-section-portfolio { */
+
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+/* } */
 
 .work {
   position: relative;
