@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Stitch'd Portfolio</title>
 
+    <!-- UIkit CSS and JS -->
+    <link rel="stylesheet" href="assets/css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
     <!-- Google API for Cookie Cursive Font -->
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
 
@@ -15,63 +20,67 @@
 
 <!-- When page loads, begin straightStitch function (still need to figure out how to adjust so responsive to screen size)-->
 
-<body onload="straightStitch()">
+<!-- <body onload="straightStitch()"> -->
 
-    <!-- Header / Logo / Navbar -->
-    <header id="masthead">
-        <div class="container">
-            <img src="assets/images/spool-removebg.png" id="spool">
-            <h2 id="cookie">Calah Hansen</h2>
-            <!-- <nav id="nav">
+<!-- Header / Logo / Navbar -->
+<header id="masthead">
+    <div class="container">
+        <img src="assets/images/spool-removebg.png" id="spool">
+        <h2 id="cookie">Calah Hansen</h2>
+        <!-- <nav id="nav">
                 <a href="index.html">About</a>
                 <a href="portfolio.html">Portfolio</a>
                 <a href="contact.html">Contact</a>
             </nav> -->
-            <div class="dropdown">
-                <img src="assets/images/buttons-removebg.png" class="dropdownBtn" id="buttons">
-                <div class="dropdown-content">
-                    <a href="index.html">About</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
+        <div class="dropdown">
+            <img src="assets/images/buttons-removebg.png" class="dropdownBtn" id="buttons">
+            <div class="dropdown-content">
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
             </div>
         </div>
-    </header>
-
-    <!-- Main Contents -->
-    <div id="main-container" class="container">
-        <section class="main-section">
-            <h1>About Me</h1>
-            <!-- Line of sewing function begins "sewing" here on page load -->
-            <p id="sewing-line"></p>
-
-            <img src="assets/images/profile pic.jpg" id="my-image" alt="image of Calah Hansen">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc
-                porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui
-                massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus
-                vitae sollicitudin consectetur.</p>
-
-            <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id
-                eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
-            <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor
-                et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-        </section>
-
     </div>
+</header>
 
-    <footer>
-        <div class="container">
-            Copyright &copy;
-        </div>
-    </footer>
+<!-- Main Contents -->
+<div id="main-container" class="container">
+    <section class="main-section">
+        <h1>About Me</h1>
+        <!-- Line of sewing function begins "sewing" here on page load -->
+        <p id="sewing-line"></p>
 
+        <img src="assets/images/profile pic.jpg" id="my-image" alt="image of Calah Hansen">
 
-    <script src="assets/javascript/app.js">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc
+            porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui
+            massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus
+            vitae sollicitudin consectetur.</p>
 
-    </script>
+        <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id
+            eros iaculis, pulvinar quam eget, egestas mauris.</p>
+
+        <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor
+            et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+    </section>
+
+</div>
+
+<footer>
+    <div class="container">
+        Copyright &copy;
+    </div>
+</footer>
+
+<!-- UIkit JS -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script> -->
+
+<!-- MY JS -->
+<script src="assets/javascript/app.js">
+
+</script>
 
 </body>
 
