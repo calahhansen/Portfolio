@@ -4,91 +4,168 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Calah Hansen</title>
-  <!-- Google API for Cookie Cursive Font -->
-  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+
+  <!-- UIkit CSS and JS -->
+  <link rel="stylesheet" href="assets/css/uikit.min.css" />
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
 
   <!-- My CSS Styling -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<!-- When page loads, begin straightStitch function -->
+<!-- When page loads, begin straightStitch function (in body tag) onload="straightStitch()" (still need to figure out how to adjust so responsive to screen size)-->
 
-<body onload="straightStitch()">
+<body class="uk-background-cover uk-background-fixed" onload="straightStitch()">
 
-  <!-- Header / Logo / Navbar -->
-  <header id="masthead">
-    <div class="container">
-      <img src="assets/images/spool-removebg.png" id="spool">
-      <h2 id="cookie">Calah Hansen</h2>
-      <!-- <nav id="nav">
-                  <a href="index.html">About</a>
-                  <a href="portfolio.html">Portfolio</a>
-                  <a href="contact.html">Contact</a>
-              </nav> -->
-      <div class="dropdown">
-        <img src="assets/images/buttons-removebg.png" class="dropdownBtn" id="buttons">
-        <div class="dropdown-content">
-          <a href="index.html">About</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
+  <!-- Logo / Name / Navbar -->
+  <nav class="uk-padding uk-navbar-container uk-navbar-transparent" uk-navbar>
+    <div class="uk-navbar-left">
+      <h1 class="uk-heading-line uk-light"><span>Calah Hansen</span></h1>
     </div>
-  </header>
+    <div class="uk-navbar-right uk-light">
+      <ul class="uk-subnav uk-subnav-divider">
+        <li class="uk-active"><a href="index.html">About</a></li>
+        <li class="uk-active"><a href="portfolio.html">Portfolio</a></li>
+        <li class="uk-active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <div id="main-container" class="container">
-    <h1>Portfolio</h1>
-    <!-- Line of sewing function begins "sewing" here on page load -->
-    <p id="sewing-line"></p>
+  <!-- Main Contents -->
+  <div>
+    <section class="uk-navbar-transparent uk-padding uk-panel uk-section uk-light">
+      <h1>Portfolio</h1>
+      <!-- Line of sewing function begins "sewing" here on page load -->
+      <!-- <p id="sewing-line"></p> -->
+      <!-- <div class="uk-grid-small" uk-grid>
+                   <div class="uk-width-expand" uk-leader="fill: -">-</div>
+                   <div>-</div>
+               </div> -->
 
-    <!-- change this section to use Grid when I have more time so that I can change layout switch class to main-section-portfolio then -->
-    <section class="main-section">
-      <div class="work">
-        <img src="assets/images/giftastic.PNG" url="http://calahhansen.github.io/Giftastic/index.html" alt="Giftastic">
+      <!-- PORTFOLIO PROJECT SLIDER -->
+      <div uk-slider>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+          <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+            <li>
+              <div class="uk-panel">
+                <img src="assets/images/Giftastic.PNG" url="http://calahhansen.github.io/Giftastic/index.html"
+                  alt="Giftastic">
+                <div class="uk-position-center uk-panel">
+                  <!-- <h1>Giftastic</h1> -->
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="assets/images/Guessmyletter.PNG" url="https://calahhansen.github.io/Psychic-Game/index.html"
+                  alt="Guess My Letter Game">
+                <div class="uk-position-center uk-panel">
+                  <!-- <h1>Guess My Letter</h1> -->
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="assets/images/AirCareOneGame.PNG"
+                  url="https://calahhansen.github.io/Air-Care-One/howtoplay.html" alt="Air-Care-One Game">>
+                <div class="uk-position-center uk-panel">
+                  <!-- <h1>RPG Game</h1> -->
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="assets/images/triviagame.PNG" url="https://calahhansen.github.io/Trivia_Game/index.html"
+                  alt="Trivia Game">
+                <div class="uk-position-center uk-panel">
+                  <!-- <h1>Trivia Game</h1> -->
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="assets/images/liri.PNG" url="https://calahhansen.github.io/Liri-bot/liri.js" alt="Liri-Bot">
+                <div class="uk-position-center uk-panel">
+                  <h1>LIRI-bot</h1>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="assets/images/bamazon.PNG" url="#" alt="Bamazon App">
+                <div class="uk-position-center uk-panel">
+                  <h1>Bamazon App</h1>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/slider2.jpg" alt="">
+                <div class="uk-position-center uk-panel">
+                  <h1>7</h1>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/slider3.jpg" alt="">
+                <div class="uk-position-center uk-panel">
+                  <h1>8</h1>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/slider4.jpg" alt="">
+                <div class="uk-position-center uk-panel">
+                  <h1>9</h1>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="uk-panel">
+                <img src="images/slider5.jpg" alt="">
+                <div class="uk-position-center uk-panel">
+                  <h1>10</h1>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <a class="uk-position-center-left uk-position-large uk-inverse-dark" href="#" uk-slidenav-previous
+            uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-large uk-inverse-light" href="#" uk-slidenav-next
+            uk-slider-item="next"></a>
+        </div>
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
       </div>
-      <h3>Giftastic!</h3>
-
-      </div>
-      <div class="work">
-        <img src="assets/images/Guessmyletter.PNG" url="https://calahhansen.github.io/Psychic-Game/index.html" alt="Psychic Game">
-      </div>
-      <h3>Psychic Game</h3>
-
-      <div class="work">
-        <img src="assets/images/AirCareOneGame.PNG" url="https://calahhansen.github.io/Air-Care-One/howtoplay.html" alt="Air-Care-One Game">
-        <h3>RPG Game</h3>
-      </div>
-
-      <div class="work">
-        <img src="assets/images/triviagame.PNG" url="https://calahhansen.github.io/Trivia_Game/index.html" alt="Trivia Game">
-        <h3>Trivia Game</h3>
-      </div>
-
-      <!-- <div class="work">
-        <img src="assets/images/liri.PNG" url ="https://calahhansen.github.io/Liri-bot/liri.js" alt="Liri-Bot">
-
-        <h3>LIRI-Bot</h3>
-      </div> -->
-
-      <!-- <div class="work">
-        <img src="assets/images/rockpaperscissors.jpg">
-
-        <h3>Rock Paper Scissors</h3>
-      </div> -->
-
     </section>
 
   </div>
 
   <footer>
-    <div class="container">
-      Copyright &copy;
+    <div class="uk-padding uk-navbar-container uk-navbar-transparent uk-light">
+      <ul class="uk-iconnav">
+        <li><a href="https://github.com/calahhansen" uk-icon="icon: github; ratio: 2"></a></li>
+        <li><a href="https://www.linkedin.com/in/calah-hansen" uk-icon="icon: linkedin; ratio: 2"></a></li>
+        <li><a
+            href="https://docs.google.com/document/d/e/2PACX-1vQn_mBjntzP06Lp3SeF-s2e0GtQBo1uI0jCNb_tTJoPSiRpDj1jwzck9P3D60hvYX5NhDPiiMYO1Oa1/pub"
+            uk-icon="icon: file-text; ratio: 2"></a></li>
+      </ul>
+      <p class="uk-navbar-right">Copyright &copy;</p>
     </div>
   </footer>
 
-  <script src="assets/javascript/app.js">
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+  <script src="assets/javascript/uikit-icons.js"></script>
 
-  </script>
+  <!-- MY JS -->
+  <script src="assets/javascript/app.js"></script>
 
 </body>
 
