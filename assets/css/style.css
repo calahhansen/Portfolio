@@ -15,6 +15,10 @@ body {
   background-color: #ffffff;
 }
 
+img {
+  border-radius: 30px;
+}
+
 /* header */
 
 /* Change color of dropdown links on hover */
