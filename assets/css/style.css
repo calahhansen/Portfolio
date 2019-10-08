@@ -4,6 +4,7 @@ body {
   background: url("../images/thread.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: lighten;
 }
 
 .container {
